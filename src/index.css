@@ -1,0 +1,67 @@
+/* src/styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  overflow-y: hidden;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  /* -webkit-appearance: none; */
+  /* Remove most all native input styles */
+  /* appearance: none; */
+  /* For iOS < 15 */
+  background-color: rebeccapurple;
+  /* Not removed via appearance */
+  /* margin: 0; */
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  /* transform: translateY(-0.075em); */
+
+  /* display: grid;
+    place-content: center; */
+}
+.categories {
+  transition: height 0.5s ease-in-out, opacity .5s ease-in-out;
+}
+/* .h1-heading{
+    background-color: red;
+  } */
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.icons::after{
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.316);
+  display: block;
+  position: absolute;
+  right: -12px;
+  top: 5px;
+}

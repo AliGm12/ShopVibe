@@ -1,0 +1,168 @@
+/**
+* @license
+*
+* Font Family: Clash Display
+* Designed by: Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/clash-display
+* © 2024 Indian Type Foundry
+*
+* Clash Display Extralight 
+* Clash Display Light 
+* Clash Display Regular 
+* Clash Display Medium 
+* Clash Display Semibold 
+* Clash Display Bold 
+* Clash Display Variable (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('./fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Extralight.woff') format('woff'),
+       url('./fonts/ClashDisplay-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('./fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Light.woff') format('woff'),
+       url('./fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('./fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('./fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('./fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('./fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('./fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('./fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('./fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Bold.woff') format('woff'),
+       url('./fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Variable.woff') format('woff'),
+       url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+.ultra{
+  font-family:  'ClashDisplay-Variable';
+}
+.ultra2{
+  font-family:  'ClashDisplay-Bold';
+
+}
+body{
+  font-family:  'ClashDisplay-Regular';
+}
+/* width */
+.checkout-div::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.checkout-div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.checkout-div::-webkit-scrollbar-thumb {
+  background: #88888893;
+}
+
+/* Handle on hover */
+.checkout-div::-webkit-scrollbar-thumb:hover {
+  background: #555555ae;
+}
+
+.product-page::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+.product-page::-webkit-scrollbar-track {
+  background: #bfbdbd50;
+}
+
+/* Handle */
+.product-page::-webkit-scrollbar-thumb {
+  background: #6f706f48;
+}
+
+/* Handle on hover */
+.product-page::-webkit-scrollbar-thumb:hover {
+  background: #555555ae;
+}
+.left-sidebar-div::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.left-sidebar-div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.left-sidebar-div::-webkit-scrollbar-thumb {
+  background: #08010131;
+}
+
+/* Handle on hover */
+.left-sidebar-div::-webkit-scrollbar-thumb:hover {
+  background: #555555ae;
+}
+@keyframes animate {
+  from{
+    transform: scale(1.1);
+  }
+  to{
+    transform: scale(1.6);
+  }
+}
+.bag-icon{
+  display: block;
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
